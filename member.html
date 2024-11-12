@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazrul Mess Members</title>
+    <link rel="stylesheet" href="member.css">
+    <link rel="stylesheet" href="header_navbar.css">
+</head>
+<body>
+
+<!-- Header with Navigation -->
+<header>
+    <h1>NAZRUL MESS</h1>
+</header>
+<div class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="member.html">Members</a>
+    <a href="alumni.html">Alumni</a>
+    <a href="contact.html">Contact</a>
+    <a href="Admission_form.html">Admission</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+</div>
+
+<!-- Toggle Button to Switch Members -->
+<div style="text-align: center; margin: 20px;">
+    <button class="active-button" onclick="showMembers('present')">Present Members</button>
+    <button onclick="showMembers('previous')">Previous Members</button>
+</div>
+
+<!-- Table Header -->
+<h3 id="tableTitle">Nazrul Mess Present Members</h3>
+
+<!-- Members Table -->
+<table id="membersTable" border="2" style="width: 90%; border-collapse: collapse; text-align: center;">
+    <thead>
+        <tr>
+            <th>Sl. No.</th>
+            <th>Name</th>
+            <th>Department/Profession</th>
+            <th>Reg. No.</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        <!-- Table rows will be populated dynamically -->
+    </tbody>
+</table>
+
+<script src="member.js"></script>
+<script src="header_navbar.js"></script>
+
+</body>
+</html>

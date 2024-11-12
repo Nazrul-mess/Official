@@ -1,0 +1,66 @@
+/* General Button Styles */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: black; /* Default text color */
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Focus Effect for Accessibility */
+button:focus {
+    outline: 2px solid #333;
+    outline-offset: 4px;
+    background-color: #9734ed;
+}
+
+/* Active Button Style */
+.active-button {
+    outline: 2px solid #333;
+    outline-offset: 4px;
+    background-color: #9734ed;
+}
+
+/* Table Styling */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: #bda9fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #2f146d;
+}
+
+th {
+    background-color: #e8cc6a;
+    color: rgb(16, 34, 164);
+}
+
+tr:hover {
+    background-color: #15f091;
+}
+
+/* Header Styles */
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+}

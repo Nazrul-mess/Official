@@ -1,0 +1,67 @@
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #4a4a4a;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.score {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #7a7979;
+    padding: 20px 0;
+}
+
+.score div {
+    text-align: center;
+}
+
+.score div h3 {
+    font-size: 24px;
+    color: #642bf4;
+}
+
+.score div p {
+    font-size: 18px;
+    color: #56147a;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}

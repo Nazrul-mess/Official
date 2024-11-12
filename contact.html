@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header_navbar.css">
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+<header>
+    <h1>NAZRUL MESS</h1>
+</header>
+<div class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="member.html">Members</a>
+    <a href="alumni.html">Alumni</a>
+    <a class="active" href="contact.html">Contact</a>
+    <a href="Admission_form.html">Admission</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        &#9776;
+    </a>
+</div>
+
+
+    <div class="header">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" name="first_name" placeholder="First Name">
+            <input type="text" name="last_name" placeholder="Last Name">
+            <input type="email" name="email" placeholder="E-mail">
+            <select name="country">
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <!-- Add more countries as needed -->
+            </select>
+            <textarea name="subject" rows="5" placeholder="Write something.."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div>
+            <h3>Address</h3>
+            <p>Domohani Road, Purana Station,</p>
+            <p>P. O.  Kalla C. H., Asansol,</p>
+            <p>West Bengal, 713302, India</p>
+        </div>
+        <div>
+            <h3>Phone</h3>
+            <p>+91 34135 89832 / +91 96146 18594</p>
+        </div>
+        <div>
+            <h3>Email</h3>
+            <p>contact.nazrulmess@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+    <script src="header_navbar.js"></script>
+
+</body>
+</html>

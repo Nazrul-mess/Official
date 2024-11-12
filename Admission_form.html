@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="Admission_form.css" />
+    <link rel="stylesheet" href="header_navbar.css">
+  </head>
+  <body>
+<!-- Header with Navigation -->
+<header>
+    <h1>NAZRUL MESS</h1>
+</header>
+<div class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="member.html">Members</a>
+    <a href="alumni.html">Alumni</a>
+    <a href="contact.html">Contact</a>
+    <a class="active" href="Admission_form.html">Admission</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        &#9776;
+    </a>
+</div>
+
+
+    <form action="https://script.google.com/macros/s/AKfycbwc31IC8DJCOXn_KFkP2p9SHGB7eAslHdFa55zp9a8/dev" method="post" enctype="multipart/form-data">
+      <h2>ADMISSION FORM</h2>
+      <fieldset>
+        <legend><h4>Personal Information</h4></legend>
+        <p>
+          *Name :
+          <input
+            type="text"
+            name="First Name"
+            id="fname"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="Last Name"
+            placeholder="Last name"
+            required
+          />
+        </p>
+
+        <p>
+          *Father's Name :
+          <input
+            type="text"
+            name="Father's Name"
+            placeholder="Father's Name"
+            required
+          />
+        </p>
+
+        <p>
+          *Mother's Name :
+          <input
+            type="text"
+            name="Mother's Name"
+            placeholder="Mother's Name"
+            required
+          />
+        </p>
+
+        <p>
+          *Guardian Mobile Number :
+          <input
+            type="tel"
+            name="Guardian Mobile Number"
+            placeholder="Guardian Mobile Number"
+            pattern="[0-9]{10}"
+            title="Mobile number must be exactly 10 digits."
+            minlength="10"
+            maxlength="10"
+            oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+            required
+          />
+        </p>
+
+        <p>
+          *Mobile Number :
+          <input
+            type="tel"
+            name="Mobile Number"
+            placeholder="Mobile Number"
+            pattern="[0-9]{10}"
+            title="Mobile number must be exactly 10 digits."
+            minlength="10"
+            maxlength="10"
+            oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+            required
+          />
+        </p>
+
+        <p>
+          *E-mail :
+          <input type="email" name="E-mail" placeholder="E-mail" required />
+        </p>
+
+        <p>
+          *Date of Birth : <input type="date" name="Date of Birth" required />
+        </p>
+
+          <p>Blood Group :
+            <select name="Blood Group" id="Blood Group">
+              <option value="">Select</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </p>
+
+        <p>*Address :
+          <input
+            type="text"
+            name="Village / City"
+            placeholder="Village / City"
+            required
+          />
+          <input
+            type="text"
+            name="Post Office"
+            placeholder="Post Office"
+            required
+          />
+          <input
+            type="text"
+            name="Police Station"
+            placeholder="Police Station"
+            required
+          />
+          <input type="text" name="District" placeholder="District" required />
+          <input type="text" name="PIN" placeholder="PIN" pattern="[0-9]{6}" title="PIN must be exactly 6 digits." minlength="6" maxlength="6" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required />
+        <select id="states" name="states">
+            <option value="">--Select a state--</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Ladakh">Ladakh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+        </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend><h4>Qualification</h4></legend>
+        <p>
+          *Educational Qualification :
+          <input
+            type="text"
+            name="Educational Qualification"
+            placeholder="Educational Qualification"
+            required
+          />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend><h4>Current Appearance</h4></legend>
+        <p>
+            *Appearance : 
+            <select name="Appearance" id="Appearance" onchange="handleAppearanceChange()" required>
+                <option value="">Select</option>
+                <option value="Under Graduation">Under Graduation</option>
+                <option value="Post Graduation">Post Graduation</option>
+                <option value="Preparation For Examination">Preparation For Examination</option>
+                <option value="Doing Job">Doing Job</option>
+            </select>
+        </p>
+        
+        <div id="underGradSection" style="display:none;">
+            <p>*Select Stream :</p>
+            <select name="Stream" id="Stream">
+                <option value="">Select</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="B.A">B.A</option>
+                <option value="B.Com">B.Com</option>
+                <option value="LLB">LLB</option>
+            </select>
+            *Department : <input type="text" name="Depertment" placeholder="Department"></input>
+        </div>
+
+        <div id="postGradSection" style="display:none;">
+            <p>*Select Stream :</p>
+            <select name="Stream01" id="Stream01">
+                <option value="">Select</option>
+                <option value="M.Sc">M.Sc</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="M.A">M.A</option>
+                <option value="M.Com">M.Com</option>
+                <option value="LLM">LLM</option>
+            </select>
+            *Department : <input type="text" name="Depertment01" placeholder="Department"></input>
+        </div>
+
+        <div id="preparationSection" style="display:none;">
+            <p>*Examination Name :</p>
+            <input type="text" name="Preparation" placeholder="Examination Name" />
+        </div>
+
+        <div id="jobSection" style="display:none;">
+            <p>*Job Name :</p>
+            <input type="text" name="Job Type" placeholder="Job Name"/>
+        </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <input type="checkbox" value="checkbox" required> <b>I here by declare that the given above is true and correct to the best of my knowledge and belife.</b>
+      </div>
+      <p>
+        <hr>  
+        <h5>* Candidates must bring the following documents for veryfication *
+          <br>
+          <i>1. Aadhar Card</i>
+          <br>
+          <i>2. Passport size photo</i>
+          <br>
+          <i>3. Admission proof of University or Collage</i></p></h5>
+    </fieldset>
+
+      <input type="submit" value="Submit" />
+      
+    </form>
+
+     <!-- Popup Notification -->
+     <div id="popupNotification">
+      <p>Form Submitted Successfully!</p>
+      <!-- <button class="close-btn" onclick="document.getElementById('popupNotification').style.display = 'none';">Close</button> -->
+    </div>
+
+
+    <script src="Admission_form.js"></script>
+    <script src="header_navbar.js"></script>
+  </body>
+</html>
